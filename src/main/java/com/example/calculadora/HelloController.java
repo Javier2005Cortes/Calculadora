@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
+
  public class HelloController {
 
     @FXML
@@ -42,6 +43,12 @@ import javafx.scene.control.TextArea;
     private Button Boton3;
      @FXML
      private Button BotonPunto;
+     @FXML
+     private Button BotonC;
+     @FXML
+     private Button BotonMasMenos;
+     @FXML
+     private Button BotonPorcentaje;
 
      @FXML
     public void onButton1Pulsado(ActionEvent actionEvent) {
@@ -120,5 +127,23 @@ import javafx.scene.control.TextArea;
 
      @FXML
      public void onBotonPuntoPulsado(ActionEvent actionEvent) {
+         tAMensaje.appendText(".");
+
+     }
+
+     @FXML
+     public void onButtonMasMenosPulsado(ActionEvent actionEvent) {
+         tAMensaje.appendText("+/-");
+
+     }
+
+     @FXML
+     public void onButtonCPulsado(ActionEvent actionEvent) {
+         tAMensaje.clear();
+     }
+
+     @FXML
+     public void onButtonPorcentajePulsado(ActionEvent actionEvent) {
+         tAMensaje.appendText("%");
      }
  }

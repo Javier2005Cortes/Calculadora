@@ -1,3 +1,22 @@
-#BotonIgual {
--fx-background-color: red;
+.button {
+    -fx-font-family: Arial;
+    -fx-font-size: 16px;
 }
+.BotonGris {
+    -fx-background-color: lightgrey;
+}
+.BotonVerde {
+    -fx-background-color: #A5D3AE;
+}
+.button:hover {
+    -fx-background-color: white;
+}
+.button:pressed {
+    -fx-background-color: red;
+}
+#Pantalla {
+    -fx-background-color: white;
+    -fx-font-size: 24px;
+    -fx-alignment: right;
+}
+
